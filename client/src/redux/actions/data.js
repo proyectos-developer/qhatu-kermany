@@ -10,7 +10,7 @@ export const set_authenticated = authenticated => {
     }
 }
 
-export const SET_OPEN_MENU_MAIN = open_menu_main => {
+export const set_open_menu_main = open_menu_main => {
     return {
         open_menu_main,
         type: datatypes.SET_OPEN_MENU_MAIN

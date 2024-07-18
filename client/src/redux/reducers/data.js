@@ -3,8 +3,6 @@ import {datatypes} from '../actions/data.js'
 const initial_state = {
     authenticated: false,
     open_menu_main: true,
-    open_modal_new_tarea: false,
-    open_modal_new_modalidad: false
 }
 
 const data = (state = initial_state, action) => {

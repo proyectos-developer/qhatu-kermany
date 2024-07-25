@@ -6,6 +6,7 @@ import arrow_down from '../../../../assets/iconos/menu/principal/down_black.png'
 import search from '../../../../assets/iconos/menu/principal/search_black.png'
 import perfil from '../../../../assets/iconos/menu/principal/perfil_black.png'
 import shop from '../../../../assets/iconos/menu/principal/shop_black.png'
+import menu from '../../../../assets/iconos/menu/principal/menu_black.png'
 
 import {set_open_menu_main} from '../../../../redux/actions/data'
 
@@ -16,7 +17,7 @@ export default function MenuPrincipalCell({proporcional}) {
     const {open_menu_main} = useSelector(({data_actions}) => data_actions)
 
     return (
-        <div style={{width: '100%', height: 'auto', paddingTop: 10 / proporcional, paddingBottom: 10 / proporcional, paddingLeft: 10 / proporcional, paddingRight: 10 / proporcional}}>
+        <div style={{width: '100%', height: 'auto', paddingTop: 10 / proporcional, paddingBottom: 10 / proporcional, paddingLeft: 0 / proporcional, paddingRight: 0 / proporcional}}>
             <div style={{width: '100%', height: 'auto', paddingLeft: 20 / proporcional, paddingRight: 20 / proporcional}}>
                 <div className='d-flex justify-content-between' style={{width: '100%', height: 86 / proporcional}}>
                     <div style={{width: '48%', height: 86 / proporcional, padding: 10 / proporcional}}>

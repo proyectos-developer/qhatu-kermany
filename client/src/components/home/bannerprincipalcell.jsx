@@ -19,7 +19,7 @@ export default function BannerPrincipalCell({proporcional}) {
                         <div className='position-relative' style={{width: '100%', height: 600 / proporcional, backgroundImage: `url(${banner_00})`, backgroundPosition: 'center', backgroundSize: 'cover',
                             backgroundRepeat: 'no-repeat'}}>
                             <div style={{width: '100%', height: 600 / proporcional, background: 'rgba(89, 89, 89, 0.6)'}}/>
-                            <div className='position-absolute' style={{width: '60%', height: 'auto', left: 60 / proporcional, top: '35%'}}>
+                            <div className='position-absolute' style={{width: '60%', height: 'auto', left: 60 / proporcional, top: '5%'}}>
                                 <h1 style={{fontSize: 60 / proporcional, color: 'rgb(160, 179, 27)', fontWeight: 700, lineHeight: `${86 / proporcional}px`, fontFamily: 'Lemonada',
                                     marginBottom: 30 / proporcional}}>
                                     Tiempo para <span style={{color: 'white'}}>frutas</span>
@@ -42,7 +42,7 @@ export default function BannerPrincipalCell({proporcional}) {
                         <div className='position-relative' style={{width: '100%', height: 600 / proporcional, backgroundImage: `url(${banner_01})`, backgroundPosition: 'center', backgroundSize: 'cover',
                             backgroundRepeat: 'no-repeat'}}>
                             <div style={{width: '100%', height: 600 / proporcional, background: 'rgba(89, 89, 89, 0.6)'}}/>
-                            <div className='position-absolute' style={{width: '60%', height: 'auto', left: 60 / proporcional, top: '35%'}}>
+                            <div className='position-absolute' style={{width: '60%', height: 'auto', left: 60 / proporcional, top: '5%'}}>
                                 <h1 style={{fontSize: 60 / proporcional, color: 'rgb(255, 180, 34)', fontWeight: 700, lineHeight: `${86 / proporcional}px`, fontFamily: 'Lemonada',
                                     marginBottom: 30 / proporcional}}>
                                     Tiempo para <span style={{color: 'white'}}>frutas</span>

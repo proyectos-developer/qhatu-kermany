@@ -22,7 +22,7 @@ export default function GlobalPanelTablet({proporcional}) {
             <MenuPrincipalCell proporcional={proporcional}/>
             {
                 open_menu_main ? (
-                    <div className='position-absolute start-0 d-flex' style={{width: '100%', height: '100%', top: 193 / proporcional}}>
+                    <div className='position-absolute start-0 d-flex' style={{width: '100%', height: '100%', top: 193 / proporcional, zIndex: 99999}}>
                         <div style={{width: '40%', height: '100%', background: 'rgba(89, 89, 89, 0.6)'}}/>
                         <div className='' style={{width: '60%', height: '100%', padding: 10 / proporcional, background: 'rgb(160, 179, 27)'}}>
                                 <div classNamed='' style={{width: 'auto', height: 'auto', padding: 15 / proporcional}}

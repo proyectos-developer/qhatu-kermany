@@ -4,6 +4,8 @@ import { Outlet, useNavigate } from 'react-router-dom'
 
 import MenuSuperiorCell from './comun/menu/superiorcell.jsx'
 import MenuPrincipalCell from './comun/menu/principalcell.jsx'
+import FooterCell from './comun/footer/footercell.jsx'
+
 import { useDispatch, useSelector } from 'react-redux'
 import { set_open_menu_main } from '../../redux/actions/data.js'
 
@@ -73,6 +75,7 @@ export default function GlobalPanelTablet({proporcional}) {
                 ) : null
             }
             <Outlet/>
+            <FooterCell proporcional={proporcional}/>
         </div>
     )
 }

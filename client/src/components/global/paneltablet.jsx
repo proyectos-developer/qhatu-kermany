@@ -4,6 +4,7 @@ import { Outlet } from 'react-router-dom'
 
 import MenuSuperiorTablet from './comun/menu/superiortablet.jsx'
 import MenuPrincipalTablet from './comun/menu/principaltablet.jsx'
+import FooterTablet from './comun/footer/footertablet.jsx'
 
 export default function GlobalPanelTablet({proporcional}) {
 
@@ -12,6 +13,7 @@ export default function GlobalPanelTablet({proporcional}) {
             <MenuSuperiorTablet proporcional={proporcional}/>
             <MenuPrincipalTablet proporcional={proporcional}/>
             <Outlet/>
+            <FooterTablet proporcional={proporcional}/>
         </div>
     )
 }

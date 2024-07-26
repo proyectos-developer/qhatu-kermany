@@ -32,7 +32,7 @@ export default function MenuPrincipal({proporcional}) {
                                 <div classNamed='' style={{width: 'auto', height: 'auto', padding: 15 / proporcional}}
                                     onMouseOver={() => setSeleccionMenu('inicio')} onMouseLeave={() => setSeleccionMenu('')}
                                     onClick={() => navigate ('/')}>
-                                    <div className='d-flex' style={{width: 'auto', height: 34 / proporcional}}>
+                                    <div className='d-flex' style={{width: 'auto', height: 34 / proporcional, cursor: 'pointer'}}>
                                         <p style={{fontSize: 18 / proporcional, lineHeight: `${24 / proporcional}px`, marginBottom: 0, fontWeight: 500, fontFamily: 'Poppins, sans-serif',
                                             color: 'rgb(51, 51, 51)'}}>
                                             Inicio
@@ -43,7 +43,7 @@ export default function MenuPrincipal({proporcional}) {
                                 <div classNamed='' style={{width: 'auto', height: 'auto', padding: 15 / proporcional}}
                                     onMouseOver={() => setSeleccionMenu('nosotros')} onMouseLeave={() => setSeleccionMenu('')}
                                     onClick={() => navigate ('/sobre-nosotros')}>
-                                    <div className='d-flex' style={{width: 'auto', height: 34 / proporcional}}>
+                                    <div className='d-flex' style={{width: 'auto', height: 34 / proporcional, cursor: 'pointer'}}>
                                         <p style={{fontSize: 18 / proporcional, lineHeight: `${24 / proporcional}px`, marginBottom: 0, fontWeight: 500, fontFamily: 'Poppins, sans-serif',
                                             color: 'rgb(51, 51, 51)'}}>
                                             Nosotros
@@ -54,7 +54,7 @@ export default function MenuPrincipal({proporcional}) {
                                 <div classNamed='' style={{width: 'auto', height: 'auto', padding: 15 / proporcional}}
                                     onMouseOver={() => setSeleccionMenu('tienda')} onMouseLeave={() => setSeleccionMenu('')}
                                     onClick={() => navigate ('/nuestra-tienda')}>
-                                    <div className='d-flex' style={{width: 'auto', height: 34 / proporcional}}>
+                                    <div className='d-flex' style={{width: 'auto', height: 34 / proporcional, cursor: 'pointer'}}>
                                         <p style={{fontSize: 18 / proporcional, lineHeight: `${24 / proporcional}px`, marginBottom: 0, fontWeight: 500, fontFamily: 'Poppins, sans-serif',
                                             color: 'rgb(51, 51, 51)'}}>
                                             Tienda
@@ -65,7 +65,7 @@ export default function MenuPrincipal({proporcional}) {
                                 <div classNamed='' style={{width: 'auto', height: 'auto', padding: 15 / proporcional}}
                                     onMouseOver={() => setSeleccionMenu('blog')} onMouseLeave={() => setSeleccionMenu('')}
                                     onClick={() => navigate ('/nuestro-blog')}>
-                                    <div className='d-flex' style={{width: 'auto', height: 34 / proporcional}}>
+                                    <div className='d-flex' style={{width: 'auto', height: 34 / proporcional, cursor: 'pointer'}}>
                                         <p style={{fontSize: 18 / proporcional, lineHeight: `${24 / proporcional}px`, marginBottom: 0, fontWeight: 500, fontFamily: 'Poppins, sans-serif',
                                             color: 'rgb(51, 51, 51)'}}>
                                             Blog
@@ -76,7 +76,7 @@ export default function MenuPrincipal({proporcional}) {
                                 <div classNamed='' style={{width: 'auto', height: 'auto', padding: 15 / proporcional}}
                                     onMouseOver={() => setSeleccionMenu('contacto')} onMouseLeave={() => setSeleccionMenu('')}
                                     onClick={() => navigate ('/contactatnos')}>
-                                    <div className='d-flex' style={{width: 'auto', height: 34 / proporcional}}>
+                                    <div className='d-flex' style={{width: 'auto', height: 34 / proporcional, cursor: 'pointer'}}>
                                         <p style={{fontSize: 18 / proporcional, lineHeight: `${24 / proporcional}px`, marginBottom: 0, fontWeight: 500, fontFamily: 'Poppins, sans-serif',
                                             color: 'rgb(51, 51, 51)'}}>
                                             Contáctanos

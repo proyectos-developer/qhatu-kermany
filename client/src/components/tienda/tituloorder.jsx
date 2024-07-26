@@ -21,7 +21,7 @@ export default function TituloOrder({proporcional}) {
                 </h2>
             </div>
             <div className='d-flex justify-content-end' style={{width: 'auto', height: 47 / proporcional}}>
-                <div className='d-flex' style={{width: 'auto', lineHeight: 47 / proporcional}}>
+                <div className='d-flex' style={{width: 'auto', height: 47 / proporcional}}>
                     <select
                         id='order_by'
                         className='form-select rounded-pill'

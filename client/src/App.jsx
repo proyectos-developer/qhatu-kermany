@@ -42,8 +42,8 @@ export default function App() {
                                                       <HomePanel       proporcional={1920 / width} />}/>
 
                   <Route path='nuestra-tienda' element={width < 500 ? <TiendaPanelCell   proporcional={499 / width}/> : 
-                                                width < 991 ? <TiendaPanelTablet proporcional={991 / width}/> : 
-                                                              <TiendaPanel       proporcional={1920 / width} />}/>
+                                                        width < 991 ? <TiendaPanelTablet proporcional={991 / width}/> : 
+                                                                      <TiendaPanel       proporcional={1920 / width} />}/>
                                                       
               </Route>
           </Routes>

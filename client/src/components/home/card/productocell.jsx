@@ -9,6 +9,10 @@ import refresh_white from '../../../assets/iconos/producto/refresh_white.png'
 import favorito_black from '../../../assets/iconos/producto/favorito_black.png'
 import favorito_white from '../../../assets/iconos/producto/favorito_white.png'
 
+import star_empty from '../../../assets/iconos/tienda/star_empty.png'
+import star_half from '../../../assets/iconos/tienda/star_half.png'
+import star_full from '../../../assets/iconos/tienda/star_full.png'
+
 export default function CardProductoCell({proporcional, producto}) {
 
     const [seleccion_producto, setSeleccionProducto] = useState('')
@@ -72,11 +76,11 @@ export default function CardProductoCell({proporcional, producto}) {
                     </span>
                 </div>
                 <div className='d-flex justify-content-center' style={{width: '100%', height: 'auto', marginBottom: 10 / proporcional}}>
-                    <div className='border rounded' style={{width: 24 / proporcional, height: 24 / proporcional, padding: 6 / proporcional}}/>
-                    <div className='border rounded' style={{width: 24 / proporcional, height: 24 / proporcional, padding: 6 / proporcional}}/>
-                    <div className='border rounded' style={{width: 24 / proporcional, height: 24 / proporcional, padding: 6 / proporcional}}/>
-                    <div className='border rounded' style={{width: 24 / proporcional, height: 24 / proporcional, padding: 6 / proporcional}}/>
-                    <div className='border rounded' style={{width: 24 / proporcional, height: 24 / proporcional, padding: 6 / proporcional}}/>
+                    <img src={star_empty} className='' style={{width: 24 / proporcional, height: 24 / proporcional, padding: 3 / proporcional}}/>
+                    <img src={star_empty} className='' style={{width: 24 / proporcional, height: 24 / proporcional, padding: 3 / proporcional}}/>
+                    <img src={star_empty} className='' style={{width: 24 / proporcional, height: 24 / proporcional, padding: 3 / proporcional}}/>
+                    <img src={star_empty} className='' style={{width: 24 / proporcional, height: 24 / proporcional, padding: 3 / proporcional}}/>
+                    <img src={star_empty} className='' style={{width: 24 / proporcional, height: 24 / proporcional, padding: 3 / proporcional}}/>
                     {
                         producto.calificaciones > 0 ? (
                             <span style={{fontSize: 14 / proporcional, fontWeigh: 600, color: 'rgb(153, 153, 153)', fontFamily: 'Poppins, sans-serif', marginBottom: 0 / proporcional, 

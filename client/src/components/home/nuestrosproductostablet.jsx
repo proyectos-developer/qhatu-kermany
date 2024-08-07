@@ -9,7 +9,7 @@ import papaya from '../../assets/image/home/producto_papaya_06.png'
 import pera from '../../assets/image/home/producto_pera_02.png'
 import sandia from '../../assets/image/home/producto_sandia_09.png'
 
-import CardProductoTablet from './card/productotablet.jsx'
+import CardProductoTablet from '../tienda/card/productotablet.jsx'
 
 export default function NuestrosProductosTablet({proporcional}) {
 

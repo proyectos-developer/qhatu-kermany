@@ -3,6 +3,7 @@ import {datatypes} from '../actions/data.js'
 const initial_state = {
     authenticated: false,
     open_menu_main: true,
+    sub_menu_producto: 'descripcion'
 }
 
 const data = (state = initial_state, action) => {
@@ -17,6 +18,12 @@ const data = (state = initial_state, action) => {
         return {
             ... state,
             open_menu_main
+        }
+    }else if (action.type === datatypes.SET_SUB_MENU_PRODUCTO){
+        const sub_menu_producto = action.sub_menu_producto
+        return {
+            ... state,
+            sub_menu_producto
         }
     }else{
         return state

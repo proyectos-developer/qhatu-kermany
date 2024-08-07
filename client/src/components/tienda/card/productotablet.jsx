@@ -7,8 +7,11 @@ import favorito_white from '../../../assets/iconos/producto/favorito_white.png'
 import star_full from '../../../assets/iconos/tienda/star_full.png'
 import star_half from '../../../assets/iconos/tienda/star_half.png'
 import star_empty from '../../../assets/iconos/tienda/star_empty.png'
+import { useNavigate } from 'react-router-dom'
 
 export default function CardProductoTablet({proporcional, producto}) {
+
+    const navigate = useNavigate()
 
     const [seleccion_producto, setSeleccionProducto] = useState('')
     const [seleccion_opcion, setSeleccionOpcion] = useState('')
@@ -16,6 +19,8 @@ export default function CardProductoTablet({proporcional, producto}) {
     const [boton_share, setBotonShare] = useState (false)
     const [boton_cart, setBotonCart] = useState (false)
     const [boton_heart, setBotonHeart] = useState(false)
+
+    const [seleccion_titulo, setSeleccionTitulo] = useState(false)
 
     return (
         <div className='' style={{width: '100%', height: 'auto', marginBottom: 30 / proporcional, border: '1px solid rgb(229, 229, 229)', borderRadius: 10 / proporcional,
@@ -39,8 +44,10 @@ export default function CardProductoTablet({proporcional, producto}) {
                 </div>
             </div>
             <div className='' style={{width: '100%', height: 'auto', zIndex: 99999}}>
-                <h3 style={{fontSize: 16 / proporcional, fontWeigh: 600, color: 'rgb(51, 51, 51)', fontFamily: 'Lemonada, sans-serif', marginBottom: 15 / proporcional, 
-                    lineHeight: `${18 / proporcional}px`, textAlign: 'center'}}>
+                <h3 style={{fontSize: 16 / proporcional, fontWeigh: 600, color: seleccion_titulo ? 'rgb(160, 179, 27)' : 'rgb(51, 51, 51)', fontFamily: 'Lemonada, sans-serif', 
+                    marginBottom: 15 / proporcional, lineHeight: `${18 / proporcional}px`, textAlign: 'center', cursor: 'pointer'}}
+                    onMouseOver={() => setSeleccionTitulo(true)} onMouseLeave={() => setSeleccionTitulo(false)} 
+                    onClick={() => {navigate ('/producto/producto'); window.scrollTo(0, 0)}}>
                     {producto.producto}
                 </h3>
                 <div className='d-flex justify-content-center' style={{width: '100%', height: 'auto', marginBottom: 12 / proporcional}}>

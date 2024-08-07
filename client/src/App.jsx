@@ -15,6 +15,10 @@ import TiendaPanel from './components/tienda/panel.jsx'
 import TiendaPanelTablet from './components/tienda/paneltablet.jsx'
 import TiendaPanelCell from './components/tienda/panelcell.jsx'
 
+import ProductoPanel from './components/producto/panel.jsx'
+import ProductoPanelTablet from './components/producto/paneltablet.jsx'
+import ProductoPanelCell from './components/producto/panelcell.jsx'
+
 export default function App() {
     const [width, setWidth] = useState (window.outerWidth)
 
@@ -44,6 +48,10 @@ export default function App() {
                   <Route path='nuestra-tienda' element={width < 500 ? <TiendaPanelCell   proporcional={499 / width}/> : 
                                                         width < 991 ? <TiendaPanelTablet proporcional={991 / width}/> : 
                                                                       <TiendaPanel       proporcional={1920 / width} />}/>
+
+                  <Route path='producto/:producto' element={width < 500 ? <ProductoPanelCell   proporcional={499 / width}/> : 
+                                                            width < 991 ? <ProductoPanelTablet proporcional={991 / width}/> : 
+                                                                          <ProductoPanel       proporcional={1920 / width} />}/>
                                                       
               </Route>
           </Routes>

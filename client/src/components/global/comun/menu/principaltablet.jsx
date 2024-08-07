@@ -21,7 +21,7 @@ export default function MenuPrincipalTablet({proporcional}) {
                     <div style={{width: '48%', height: 86 / proporcional, padding: 10 / proporcional}}>
                         <div style={{width: '100%', height: 39 / proporcional, marginTop: 27 / proporcional}}>
                             <h2 style={{color: 'rgb(160, 179, 27)', fontSize: 30 / proporcional, fontWeight: 700, lineHeight: `${39 / proporcional}px`, cursor: 'pointer',
-                                fontFamily: 'Lemonada, sans-serif'}}>
+                                fontFamily: 'Lemonada, sans-serif', cursor: 'pointer'}} onClick={() => navigate ('/')}>
                                 QHATU
                             </h2>
                         </div>
